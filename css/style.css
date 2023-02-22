@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+        background-color: #1B8B8F;
+    margin:auto;
+    width : 80%
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    background-color: #5e3c2e;
+    font-size: 1.6em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    font-family: PT Sans Narrow;
+    text-align: center;
+    padding: 25px 0 25px 0;
+
+}
+
+main{
+    display:flex
+}
+
+section{
+    width: 70%;
+    color: white;
+    background-color: #448088;
+    padding: 5px;
+}
+
+aside{
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+h2 {
+    color: white;
+    font-family: PT Sans Narrow;
+    font-size: 1.4em;
+    background-color: #5e3c2e;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: #a79189;
+    transition: 0.6s ease;
+}
+
+p{
+    font-family: Open Sans ;
+}
+
+img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+#logo{
+    margin: 10px;
+}
+
+
+/******************************************  Media Queries   ************************************************/
+
+/*                                               960px                                                      */
+
+@media screen and (max-width: 960px) {
+    
+    body{
+        width: 100%;
+    }
+    
+    nav{
+        width: 100%;
+    }
+    main{
+        display: block;
+        clear: both;
+        justify-content: center;
+    }
+    
+    section, aside {
+        width: auto;
+    }
+    
+    aside{
+        margin-bottom: 20px;
+    }
+}
+
+/*                                               560px                                                      */
+
+@media screen and (max-width: 560px) {
+    
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        width: auto;
+    }
+
+    aside{
+        display: none;
+    }
+}
